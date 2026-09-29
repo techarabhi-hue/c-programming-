@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){int d,f=0; printf("Enter the number of late days: "); scanf("%d",&d); if(d<0) puts("Invalid number of days."); else if(d==0) puts("No fine. Returned on time."); else if(d<=5){f=d*2;printf("Total Library Fine: Rs %d\n",f);} else if(d<=10){f=5*2+(d-5)*4;printf("Total Library Fine: Rs %d\n",f);} else if(d<=30){f=5*2+5*4+(d-10)*6;printf("Total Library Fine: Rs %d\n",f);} else puts("Fine Status: Membership Cancelled."); return 0;}

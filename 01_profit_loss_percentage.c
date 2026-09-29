@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){float cp,sp,x,p; printf("Enter Cost Price (CP): "); scanf("%f",&cp); printf("Enter Selling Price (SP): "); scanf("%f",&sp); if(cp<=0){puts("Cost price must be greater than zero.");return 0;} if(sp>cp){x=sp-cp;p=x/cp*100;printf("Profit: %.2f\nProfit Percentage: %.2f%%\n",x,p);} else if(cp>sp){x=cp-sp;p=x/cp*100;printf("Loss: %.2f\nLoss Percentage: %.2f%%\n",x,p);} else puts("No Profit No Loss."); return 0;}
