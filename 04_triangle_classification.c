@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){double a,b,c; printf("Enter the lengths of the three sides: "); scanf("%lf %lf %lf",&a,&b,&c); if(a<=0||b<=0||c<=0||a+b<=c||a+c<=b||b+c<=a) printf("The given side lengths do not form a valid triangle.\n"); else if(a==b&&b==c) printf("The triangle is Equilateral.\n"); else if(a==b||b==c||a==c) printf("The triangle is Isosceles.\n"); else printf("The triangle is Scalene.\n"); return 0;}
